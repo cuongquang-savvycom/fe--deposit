@@ -1,16 +1,17 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import HomeView from "../views/HomeView.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "home",
-    component: HomeView,
-  },
-  {
-    path: "/pool/:walletAddress",
-    name: "deposit",
-    component: () => import("../views/DepositView.vue"),
+    component: () => import("@/components/Layout/Layout.vue"),
+    children: [
+      {
+        path: "/pool/:walletAddress",
+        name: "deposit",
+        component: () => import("../views/DepositView.vue"),
+      },
+    ],
   },
   {
     path: "/:pathMatch(.*)*",
