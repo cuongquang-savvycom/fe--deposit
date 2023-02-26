@@ -363,9 +363,10 @@ module.exports = {
     fontSize: {
       xxs: ["0.625rem", { lineHeight: "0.85rem" }],
       xs: ["0.75rem", { lineHeight: "1rem" }],
+      lxs: ["0.8125rem", { lineHeight: "120%" }],
       sm: ["0.875rem", { lineHeight: "1.25rem" }],
       base: ["1rem", { lineHeight: "120%" }],
-      lg: ["1.125rem", { lineHeight: "1.75rem" }],
+      lg: ["1.125rem", { lineHeight: "120%" }],
       xl: ["1.25rem", { lineHeight: "1.75rem" }],
       "2xl": ["1.5rem", { lineHeight: "2rem" }],
       "3xl": ["1.875rem", { lineHeight: "2.25rem" }],
@@ -778,7 +779,7 @@ module.exports = {
       150: "1.5",
     },
     screens: {
-      sm: "640px",
+      sm: "500px",
       md: "880px",
       mdl: "960px",
       lg: "1024px",

@@ -1,6 +1,6 @@
 <template>
   <button
-    class="flex h-[24px] bg-orange-400 rounded text-xxs text-orange-900 px-[6px] py-[2px]"
+    class="flex rounded text-lxs px-2 py-1 bg-orange-300 text-orange-900 hover:text-white hover:bg-orange-900 items-center justify-center"
     v-bind="$attrs"
   >
     <slot></slot>
