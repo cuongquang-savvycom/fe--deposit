@@ -4,7 +4,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "home",
-    component: () => import("@/components/Layout/Layout.vue"),
+    component: () => import("@/components/Layout/MainLayout.vue"),
     children: [
       {
         path: "/pool/:walletAddress",

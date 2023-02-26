@@ -141,7 +141,10 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       slate: colors.slate,
-      gray: colors.gray,
+      gray: {
+        ...colors.gray,
+        200: "#f9f9f9",
+      },
       zinc: colors.zinc,
       neutral: {
         ...colors.neutral,
@@ -770,6 +773,7 @@ module.exports = {
     screens: {
       sm: "640px",
       md: "880px",
+      mdl: "960px",
       lg: "1024px",
       xl: "1280px",
       "2xl": "1536px",
