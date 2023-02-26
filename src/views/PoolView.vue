@@ -26,10 +26,35 @@
           </div>
         </div>
       </div>
+      <div class="flex flex-col py-4 px-6 gap-6">
+        <div class="flex flex-row justify-between">
+          <div class="flex items-center">
+            <div class="flex gap-1">
+              <img
+                class="rounded-full shadowed object-contain h-[24px] w-[24px]"
+                src="@/assets/stone.svg"
+                alt="Stone logo"
+              />
+              <img
+                class="rounded-full shadowed object-contain h-[24px] w-[24px]"
+                src="@/assets/icons/tokens/klay.png"
+                alt="Stone logo"
+              />
+            </div>
+            <span class="flex ml-4 font-bold leading-[23px]">
+              STONE / KLAY
+            </span>
+            <Tag class="ml-4 font-semibold">0.2%</Tag>
+            <TagBase class="ml-4 font-semibold leading-[12px]">STONE</TagBase>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import Input from "@/components/Input/Input.vue";
+import Tag from "@/components/Tag/Tag.vue";
+import TagBase from "@/components/Tag/TagBase.vue";
 </script>
