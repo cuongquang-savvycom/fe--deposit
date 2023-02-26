@@ -111,7 +111,7 @@ module.exports = {
     },
     boxShadow: {
       sm: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
-      DEFAULT: "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+      DEFAULT: "rgb(0 0 0 / 12%) 0px 4px 4px",
       md: "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
       lg: "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
       xl: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
@@ -148,8 +148,9 @@ module.exports = {
       zinc: colors.zinc,
       neutral: {
         ...colors.neutral,
+        100: "#f9f9f9",
         200: "#eeeeee",
-        300: "#E3E5Ed",
+        300: "#efefef",
         400: "#d6d5d3",
         500: "#777675",
         600: "#5f5e5e",
@@ -170,7 +171,10 @@ module.exports = {
       teal: colors.teal,
       cyan: colors.cyan,
       sky: colors.sky,
-      blue: colors.blue,
+      blue: {
+        ...colors.blue,
+        300: "#e1e7f0",
+      },
       indigo: colors.indigo,
       violet: colors.violet,
       purple: colors.purple,
