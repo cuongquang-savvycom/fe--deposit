@@ -6,7 +6,15 @@
       <div class="flex flex-row px-6 mb-6 justify-between items-center">
         <span class="text-2xl font-bold">POOL</span>
         <div class="flex flex-row gap-2">
-          <Input placeholder="Token name" />
+          <Input placeholder="Token name">
+            <template #input-prepend>
+              <img
+                class="w-[16px] h-[16px]"
+                src="@/assets/search.svg"
+                alt="Sort Icon"
+              />
+            </template>
+          </Input>
           <div
             class="flex rounded-md min-w-[32px] min-h-[32px] items-center justify-center border border-neutral-400 hover:cursor-pointer"
           >
